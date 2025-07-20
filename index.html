@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Enfermería Interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Enfermería</h1>
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+    <span id="progress-text">0% completado</span>
+  </div>
+  <div class="semestres">
+    <!-- Semestre 1 -->
+    <div class="semestre">
+      <h2>1er Semestre</h2>
+      <div class="ramo" data-id="quimica">Química</div>
+      <div class="ramo" data-id="anatomia">Anatomía</div>
+      <div class="ramo" data-id="intro" data-prereqs="quimica">Introducción a la Enfermería</div>
+    </div>
+    <!-- Semestre 2 -->
+    <div class="semestre">
+      <h2>2do Semestre</h2>
+      <div class="ramo" data-id="integrado1" data-prereqs="anatomia">Integrado I</div>
+      <div class="ramo" data-id="cuidados1" data-prereqs="intro">Cuidados de Enfermería I</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

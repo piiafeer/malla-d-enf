@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  background: #fff;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.semestres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.semestre {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+}
+.ramo {
+  background-color: pink;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+.ramo.aprobado {
+  background-color: #9b59b6;
+  text-decoration: line-through;
+  color: white;
+}
+.ramo.cursando {
+  background-color: #c39bd3;
+}
+.ramo.bloqueado {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #555;
+}
+#progress-bar-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+#progress-bar {
+  height: 25px;
+  width: 0%;
+  background-color: #9b59b6;
+  transition: width 0.3s ease;
+}
+#progress-text {
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+}
